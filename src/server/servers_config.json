@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "txt_counter": {
+      "command": "/Users/{username}/.local/bin/uv",
+      "args": [
+        "--directory",
+        "D:\\code\\PythonWorkPath\\deepcodeagent1\\src\\server\\desk.py",
+        "run",
+        "desk.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+# Use latest deepseek-v3 to handle basic tasks, the open source SOTA model for basic tasks
+BASIC_MODEL:
+  base_url: https://api.deepseek.com
+  model: "deepseek-chat"
+  api_key: sk-abedc052accd4ba7864aa17517719c32
+  temperature: 0.6
+  top_p: 0.90
+# Use qwen3-235b-a22b to handle reasoning tasks, the open source SOTA model for reasoning
+REASONING_MODEL:
+  base_url: https://api.deepseek.com
+  model: "deepseek-reasoning"
+  api_key: sk-abedc052accd4ba7864aa17517719c32
+  temperature: 0.6
+  top_p: 0.90
+# Use qwen3-coder-480b-a35b-instruct to handle coding tasks, the open source SOTA model for coding
+CODE_MODEL:
+  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+  model: "qwen3-coder-480b-a35b-instruct"
+  api_key: YOUR_API_KEY
+  temperature: 0.6
+  top_p: 0.90
+
+VISION_MODEL:
+  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+  model: "qwen3-vl-plus"
+  api_key: sk-4e5c92e33e7340269db56982d7aa8b29
+  temperature: 0.6
+  top_p: 0.90
+
+
+
+SEARCH_ENGINE:
+ engine: tavily
+ # Only include results from these domains
+ include_domains:
+   - example.com
+   - trusted-news.com
+   - reliable-source.org
+   - gov.cn
+   - edu.cn
+ # Exclude results from these domains
+ exclude_domains:
+   - example.com
+ # Include an answer in the search results
+ include_answer: false
+ # Search depth: "basic" or "advanced"
+ search_depth: "advanced"
+ # Include raw content from pages
+ include_raw_content: true
+ # Include images in search results
+ include_images: true
+ # Include descriptions for images
+ include_image_descriptions: true
+ # Minimum score threshold for results (0-1)
+ min_score_threshold: 0.0
+ # Maximum content length per page
+ max_content_length_per_page: 4000
+
+

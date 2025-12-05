@@ -1,0 +1,26 @@
+Text Processor Test Document
+UTF-8 Encoding
+
+This is a test document for text processing.
+
+Chapter 1: Introduction
+This chapter introduces the text processor and its capabilities.
+
+Section 1.1: Features
+- Automatic encoding detection
+- Multiple format support
+- Efficient text extraction
+
+Section 1.2: Use Cases
+- Log file processing
+- Data file analysis
+- Content extraction
+
+Chapter 2: Technical Details
+This chapter provides technical implementation details.
+
+2.1: Encoding Detection
+The processor automatically detects the file encoding.
+
+2.2: Format Support
+Supports TXT, MD, RST, and RTF formats.

@@ -1,0 +1,41 @@
+# LLM 模型配置示例
+# 复制此文件为 conf.yaml 并填入您的 API 密钥
+
+# 基础模型 - 用于协调器、研究员等
+BASIC_MODEL:
+  model: "gpt-4o-mini"
+  api_key: "YOUR_API_KEY_HERE"
+  base_url: "https://api.openai.com/v1"
+  # 可选配置:
+  # max_tokens: 4096
+  # temperature: 0.7
+  # timeout: 120
+
+# 推理模型 - 用于规划器、复杂任务
+REASONING_MODEL:
+  model: "deepseek-chat"
+  api_key: "YOUR_DEEPSEEK_API_KEY"
+  base_url: "https://api.deepseek.com"
+  # 可选配置:
+  # max_tokens: 8192
+  # temperature: 0.3
+  # timeout: 120
+
+# 代码模型 - 用于代码生成
+CODE_MODEL:
+  model: "gpt-4o"
+  api_key: "YOUR_API_KEY_HERE"
+  base_url: "https://api.openai.com/v1"
+  # 可选配置:
+  # max_tokens: 8192
+  # temperature: 0.2
+  # timeout: 120
+
+# 视觉模型 - 用于图像分析
+VISION_MODEL:
+  model: "gpt-4o"
+  api_key: "YOUR_API_KEY_HERE"
+  base_url: "https://api.openai.com/v1"
+  # 可选配置:
+  # max_tokens: 4096
+  # temperature: 0.5
