@@ -1,0 +1,4 @@
+这是第一行，使用CRLF行尾。
+This is the second line with LF line ending.
+第三行又回到CRLF行尾。
+Fourth line with LF again.

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    
+    <!-- 标题 -->
+    <text x="200" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">SVG测试图像</text>
+    
+    <!-- 基本形状 -->
+    <circle cx="100" cy="100" r="50" fill="#ff6b6b" stroke="#ff4444" stroke-width="2"/>
+    <rect x="220" y="50" width="100" height="100" rx="10" ry="10" fill="#4ecdc4" stroke="#29a8a1" stroke-width="2"/>
+    
+    <!-- 路径 -->
+    <path d="M50,200 Q100,150 200,200 T350,200" fill="none" stroke="#45b7d1" stroke-width="3"/>
+    
+    <!-- 文字 -->
+    <text x="200" y="250" font-family="Arial" font-size="16" text-anchor="middle">SVG矢量图形格式示例</text>
+    <text x="200" y="280" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">包含圆形、矩形和路径</text>
+    
+    <!-- 中文支持 -->
+    <text x="200" y="120" font-family="Arial" font-size="14" text-anchor="middle">中文测试文本</text>
+    
+    <!-- 线条 -->
+    <line x1="50" y1="220" x2="350" y2="220" stroke="#96ceb4" stroke-width="2" stroke-dasharray="5,5"/>
+</svg>

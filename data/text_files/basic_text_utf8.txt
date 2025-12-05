@@ -1,0 +1,5 @@
+这是一个基本的UTF-8编码文本文件。
+This is a basic UTF-8 encoded text file.
+
+用于测试文档解析器的基本文本处理能力。
+It tests the basic text processing capabilities of document parsers.
