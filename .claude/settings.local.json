@@ -1,7 +1,16 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python:*)"
+      "Bash(cat:*)",
+      "Bash(python:*)",
+      "Bash(chcp:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(xxd:*)",
+      "Bash(grep:*)",
+      "Bash(tasklist:*)",
+      "Bash(findstr:*)",
+      "Bash(iconv:*)"
     ],
     "deny": [],
     "ask": []

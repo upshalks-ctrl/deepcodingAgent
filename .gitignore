@@ -205,3 +205,37 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Project specific
+conf.yaml
+*.key
+*.pem
+testdir/
+test_output/
+output/
+logs/
+debug.log
+*.log
+
+# AI/ML model files
+*.model
+*.pkl
+*.pickle
+*.h5
+*.pb
+
+# API keys and secrets
+.secrets
+api_keys.txt
+credentials.json
+
+# Backup files
+*.bak
+*.backup
+
+# Temporary files
+*.tmp
+*.temp
+.nul
+temp/
+tmp/

@@ -1,0 +1,8 @@
+{
+  "auto_approve": true,
+  "auto_approve_write": true,
+  "auto_approve_bash": true,
+  "auto_approve_plan": true,
+  "approved_operations": [],
+  "denied_operations": []
+}

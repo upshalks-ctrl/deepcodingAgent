@@ -1,9 +1,9 @@
 from src.config.tools import SELECTED_RAG_PROVIDER, RAGProvider
-from src.rag.enhanced_qdrant import EnhancedQdrantRetriever
-from src.rag.retriever import Retriever
+from src.rag.rag import Retriever
+from src.rag.qdrant import QdrantRetriever
 
 
 def build_retriever() -> Retriever | None:
     if SELECTED_RAG_PROVIDER == RAGProvider.QDRANT.value:
-        return EnhancedQdrantRetriever()
+        return QdrantRetriever()
     return None

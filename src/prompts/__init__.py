@@ -1,6 +1,62 @@
-from .template import apply_prompt_template, get_prompt_template
+"""
+提示词模块
+集中管理所有agent的提示词
+"""
+
+from .planning_prompts import (
+    PLANNING_SYSTEM_PROMPT,
+    PLANNING_USER_PROMPT_TEMPLATE,
+    PLANNING_REFINEMENT_PROMPT
+)
+from .search_prompts import (
+    SEARCH_SYSTEM_PROMPT,
+    SEARCH_USER_PROMPT_TEMPLATE,
+    SEARCH_REFINEMENT_PROMPT
+)
+from .coding_prompts import (
+    CODING_SYSTEM_PROMPT,
+    CODING_USER_PROMPT_TEMPLATE,
+    CODING_REFINEMENT_PROMPT
+)
+from .reflection_prompts import (
+    REFLECTION_SYSTEM_PROMPT,
+    REFLECTION_USER_PROMPT_TEMPLATE
+)
+
+# 提示词字典，方便外部调用
+PROMPTS = {
+    "planning": {
+        "system": PLANNING_SYSTEM_PROMPT,
+        "user": PLANNING_USER_PROMPT_TEMPLATE,
+        "refinement": PLANNING_REFINEMENT_PROMPT
+    },
+    "search": {
+        "system": SEARCH_SYSTEM_PROMPT,
+        "user": SEARCH_USER_PROMPT_TEMPLATE,
+        "refinement": SEARCH_REFINEMENT_PROMPT
+    },
+    "coding": {
+        "system": CODING_SYSTEM_PROMPT,
+        "user": CODING_USER_PROMPT_TEMPLATE,
+        "refinement": CODING_REFINEMENT_PROMPT
+    },
+    "reflection": {
+        "system": REFLECTION_SYSTEM_PROMPT,
+        "user": REFLECTION_USER_PROMPT_TEMPLATE
+    }
+}
 
 __all__ = [
-    "apply_prompt_template",
-    "get_prompt_template",
+    "PROMPTS",
+    "PLANNING_SYSTEM_PROMPT",
+    "PLANNING_USER_PROMPT_TEMPLATE",
+    "PLANNING_REFINEMENT_PROMPT",
+    "SEARCH_SYSTEM_PROMPT",
+    "SEARCH_USER_PROMPT_TEMPLATE",
+    "SEARCH_REFINEMENT_PROMPT",
+    "CODING_SYSTEM_PROMPT",
+    "CODING_USER_PROMPT_TEMPLATE",
+    "CODING_REFINEMENT_PROMPT",
+    "REFLECTION_SYSTEM_PROMPT",
+    "REFLECTION_USER_PROMPT_TEMPLATE"
 ]

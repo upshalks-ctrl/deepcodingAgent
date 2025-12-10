@@ -1,17 +1,109 @@
 # LLM 模型配置示例
+# 支持多种模型提供商：OpenAI, Anthropic, Google, DashScope
 # 复制此文件为 conf.yaml 并填入您的 API 密钥
 
-# 基础模型 - 用于协调器、研究员等
+# ==================== OpenAI 配置 ====================
+
+# 基础模型（OpenAI GPT-4o-mini）
 BASIC_MODEL:
   model: "gpt-4o-mini"
-  api_key: "YOUR_API_KEY_HERE"
+  api_key: "YOUR_OPENAI_API_KEY"
   base_url: "https://api.openai.com/v1"
   # 可选配置:
   # max_tokens: 4096
   # temperature: 0.7
   # timeout: 120
 
-# 推理模型 - 用于规划器、复杂任务
+# 代码模型（OpenAI GPT-4o）
+CODE_MODEL:
+  model: "gpt-4o"
+  api_key: "YOUR_OPENAI_API_KEY"
+  base_url: "https://api.openai.com/v1"
+  # 可选配置:
+  # max_tokens: 8192
+  # temperature: 0.2
+  # timeout: 120
+
+# 视觉模型（支持图像理解）
+VISION_MODEL:
+  model: "gpt-4o"
+  api_key: "YOUR_OPENAI_API_KEY"
+  base_url: "https://api.openai.com/v1"
+  # 可选配置:
+  # max_tokens: 8192
+  # temperature: 0.5
+  # timeout: 120
+
+# ==================== Anthropic 配置 ====================
+
+# 高级模型（Anthropic Claude）
+ADVANCED_MODEL:
+  model: "claude-3-5-sonnet-20241022"
+  api_key: "YOUR_ANTHROPIC_API_KEY"
+  base_url: "https://api.anthropic.com/v1"
+  # 可选配置:
+  # max_tokens: 8192
+  # temperature: 0.5
+  # timeout: 120
+
+# Claude Haiku（轻量级）
+HAIKU_MODEL:
+  model: "claude-3-haiku-20240307"
+  api_key: "YOUR_ANTHROPIC_API_KEY"
+  base_url: "https://api.anthropic.com/v1"
+  # 可选配置:
+  # max_tokens: 4096
+  # temperature: 0.7
+  # timeout: 120
+
+# ==================== Google 配置 ====================
+
+# Google Gemini Pro
+GEMINI_MODEL:
+  model: "gemini-pro"
+  api_key: "YOUR_GOOGLE_API_KEY"
+  base_url: "https://generativelanguage.googleapis.com/v1beta"
+  # 可选配置:
+  # max_tokens: 4096
+  # temperature: 0.7
+  # timeout: 120
+
+# ==================== DashScope 配置（阿里云） ====================
+
+# Qwen Turbo（快速）
+QWEN_TURBO_MODEL:
+  model: "qwen-turbo"
+  api_key: "YOUR_DASHSCOPE_API_KEY"
+  base_url: "https://dashscope.aliyuncs.com/api/v1"
+  # 可选配置:
+  # max_tokens: 4096
+  # temperature: 0.7
+  # timeout: 120
+
+# Qwen Plus（增强版）
+QWEN_PLUS_MODEL:
+  model: "qwen-plus"
+  api_key: "YOUR_DASHSCOPE_API_KEY"
+  base_url: "https://dashscope.aliyuncs.com/api/v1"
+  # 可选配置:
+  # max_tokens: 8192
+  # temperature: 0.5
+  # timeout: 120
+
+# Qwen Max（最强版）
+QWEN_MAX_MODEL:
+  model: "qwen-max"
+  api_key: "YOUR_DASHSCOPE_API_KEY"
+  base_url: "https://dashscope.aliyuncs.com/api/v1"
+  # 可选配置:
+  # max_tokens: 8192
+  # temperature: 0.3
+  # timeout: 120
+
+# ==================== DeepSeek 配置 ====================
+
+# DeepSeek Chat（通用对话模型）
+# 推荐用于: 日常对话、简单推理
 REASONING_MODEL:
   model: "deepseek-chat"
   api_key: "YOUR_DEEPSEEK_API_KEY"
@@ -21,21 +113,27 @@ REASONING_MODEL:
   # temperature: 0.3
   # timeout: 120
 
-# 代码模型 - 用于代码生成
-CODE_MODEL:
-  model: "gpt-4o"
-  api_key: "YOUR_API_KEY_HERE"
-  base_url: "https://api.openai.com/v1"
+# DeepSeek Reasoner（推理模型）
+# 推荐用于: 复杂推理任务（如果可用）
+# REASONING_MODEL:
+#   model: "deepseek-reasoner"
+#   api_key: "YOUR_DEEPSEEK_API_KEY"
+#   base_url: "https://api.deepseek.com"
+
+# DeepSeek Coder（代码模型）
+# 推荐用于: 代码生成、编程任务
+DEEPSEEK_CODER:
+  model: "deepseek-coder"
+  api_key: "YOUR_DEEPSEEK_API_KEY"
+  base_url: "https://api.deepseek.com"
   # 可选配置:
   # max_tokens: 8192
   # temperature: 0.2
   # timeout: 120
 
-# 视觉模型 - 用于图像分析
-VISION_MODEL:
-  model: "gpt-4o"
-  api_key: "YOUR_API_KEY_HERE"
-  base_url: "https://api.openai.com/v1"
-  # 可选配置:
-  # max_tokens: 4096
-  # temperature: 0.5
+# DeepSeek V3（最新模型）
+# 通才模型，适用于各种任务（如果可用）
+# V3_MODEL:
+#   model: "deepseek-v3"
+#   api_key: "YOUR_DEEPSEEK_API_KEY"
+#   base_url: "https://api.deepseek.com"

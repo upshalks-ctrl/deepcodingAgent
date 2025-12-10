@@ -1,0 +1,30 @@
+{
+  "workflow_architecture": {
+    "phases": [
+      "planning",
+      "searching",
+      "coding",
+      "executing",
+      "reflecting",
+      "finished"
+    ],
+    "ai_driven": "AI decides when to advance phases and what actions to take",
+    "tools": "Different agents have different tools based on their role"
+  },
+  "examples": [
+    {
+      "task": "Create a REST API for user management",
+      "files_created": [
+        "requirements.txt"
+      ],
+      "success": true
+    },
+    {
+      "task": "Build a web scraper for news headlines",
+      "files_created": [
+        "requirements.txt"
+      ],
+      "success": true
+    }
+  ]
+}

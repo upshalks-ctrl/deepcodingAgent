@@ -5,7 +5,7 @@ import json
 import logging
 from typing import Annotated
 
-from langchain_core.tools import tool
+from .decorators import tool
 
 from src.crawler import Crawler
 
